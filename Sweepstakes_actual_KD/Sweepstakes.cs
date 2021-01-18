@@ -10,7 +10,18 @@ namespace Sweepstakes_actual_KD
     {
         // member variables
         public Dictionary<int, Contestant> contestants;
-        public string name;
+        private string name;
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
 
         // constructor
         public Sweepstakes(string name)
