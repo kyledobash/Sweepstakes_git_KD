@@ -35,7 +35,7 @@ namespace Sweepstakes_actual_KD
 
         public void PrintContestantInfo(Contestant contestant)
         {
-
+            Console.WriteLine(contestant);
         }
     }
 }
