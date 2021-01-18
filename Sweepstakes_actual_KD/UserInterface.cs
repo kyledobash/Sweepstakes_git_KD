@@ -13,6 +13,9 @@ namespace Sweepstakes_actual_KD
         // constructor
 
         // member methods
+        public static string GetUserInputFor(string promptForUser)
+        {
 
+        }
     }
 }

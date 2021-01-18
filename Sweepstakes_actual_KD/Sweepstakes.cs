@@ -32,5 +32,10 @@ namespace Sweepstakes_actual_KD
             int winnerID = winner.Next(0, contestants.Count);
             return contestants[winnerID];
         }
+
+        public void PrintContestantInfo(Contestant contestant)
+        {
+
+        }
     }
 }
