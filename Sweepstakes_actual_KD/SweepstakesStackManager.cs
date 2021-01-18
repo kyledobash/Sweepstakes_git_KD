@@ -17,11 +17,11 @@ namespace Sweepstakes_actual_KD
         // member methods
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-
+            stack.Push(sweepstakes);
         }
         public Sweepstakes GetSweepstakes()
         {
-
+            //how can I do this?
         }
     }
 }
