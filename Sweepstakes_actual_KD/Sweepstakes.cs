@@ -9,14 +9,28 @@ namespace Sweepstakes_actual_KD
     public class Sweepstakes
     {
         // member variables
-        public Dictionary<int, string> contestants;
+        public Dictionary<int, Contestant> contestants;
+        public string name;
 
         // constructor
-        public Sweepstakes()
+        public Sweepstakes(string name)
         {
-            contestants = new Dictionary<int, string>();
+            this.name = name;
+            contestants = new Dictionary<int, Contestant>();
         }
-        // member methods
 
+        // member methods
+        public void RegisterContestant(Contestant contestant)
+        {
+            contestants.Add(contestant.registrationNumber, contestant);
+        }
+
+        public Contestant PickWinner()
+        {
+            Random winner = new Random();
+
+            int winnerID = winner.Next(0, contestants.Count);
+            return contestants[winnerID];
+        }
     }
 }

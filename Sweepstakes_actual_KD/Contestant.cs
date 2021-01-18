@@ -22,6 +22,7 @@ namespace Sweepstakes_actual_KD
             this.address = address;
             this.registrationNumber = registrationnumber;
         }
+
         // member methods
 
     }
