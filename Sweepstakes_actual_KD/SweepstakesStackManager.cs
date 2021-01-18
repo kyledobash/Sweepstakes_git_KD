@@ -12,7 +12,10 @@ namespace Sweepstakes_actual_KD
         Stack<Sweepstakes> stack;
 
         // constructor
-
+        public SweepstakesStackManager()
+        {
+            stack = new Stack<Sweepstakes>();
+        }
 
         // member methods
         public void InsertSweepstakes(Sweepstakes sweepstakes)

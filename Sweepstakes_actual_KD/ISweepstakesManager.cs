@@ -11,7 +11,7 @@ namespace Sweepstakes_actual_KD
         // properties
 
         // methods
-        void InsertSweepStakes(Sweepstakes sweepstakes);
+        void InsertSweepstakes(Sweepstakes sweepstakes);
 
         Sweepstakes GetSweepstakes();
     }
