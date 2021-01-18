@@ -24,7 +24,7 @@ namespace Sweepstakes_actual_KD
         }
         public Sweepstakes GetSweepstakes()
         {
-            //how can I do this?
+            return stack.Pop(); // NEEDS REVIEW
         }
     }
 }
