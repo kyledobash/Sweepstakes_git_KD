@@ -23,7 +23,6 @@ namespace Sweepstakes_actual_KD
         {
             Console.WriteLine("Congratulations " + winner.firstName + " " + winner.lastName + " you've won " + contest.Name + "!");
         }
-
         public static void NotifyAllOfWinner(Sweepstakes contest, Contestant winner)
         {
             Console.WriteLine(winner.firstName + " " + winner.lastName + " has won " + contest.Name + "!");

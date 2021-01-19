@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes_actual_KD
 {
-    public class Sweepstakes : INotify
+    public class Sweepstakes
     {
         // member variables
         public Dictionary<int, Contestant> contestants;
