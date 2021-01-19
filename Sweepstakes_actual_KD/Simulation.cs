@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes_actual_KD
 {
-    class Simulation
+    public class Simulation
     {
         // member variables
         MarketingFirm marketingFirm;
