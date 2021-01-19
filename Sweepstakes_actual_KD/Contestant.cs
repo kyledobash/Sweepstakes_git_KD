@@ -15,11 +15,11 @@ namespace Sweepstakes_actual_KD
         public int registrationNumber;
 
         // constructor
-        public Contestant(string firstname, string lastname, string address, int registrationnumber)
+        public Contestant(int registrationnumber)
         {
-            this.firstName = firstname;
-            this.lastName = lastname;
-            this.address = address;
+            this.firstName = UserInterface.GetUserInputFor("Please enter your first name");
+            this.lastName = UserInterface.GetUserInputFor("Please enter your last name");
+            this.address = UserInterface.GetUserInputFor("Please enter your address");
             this.registrationNumber = registrationnumber;
         }
 
