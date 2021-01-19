@@ -24,7 +24,7 @@ namespace Sweepstakes_actual_KD
         }
         public Sweepstakes GetSweepstakes()
         {
-            return queue.Dequeue(); // REVIEW THIS
+            return queue.Dequeue();
         }
     }
 }
