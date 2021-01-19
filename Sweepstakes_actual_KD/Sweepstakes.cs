@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes_actual_KD
 {
-    public class Sweepstakes
+    public class Sweepstakes : INotify
     {
         // member variables
         public Dictionary<int, Contestant> contestants;
@@ -47,6 +47,22 @@ namespace Sweepstakes_actual_KD
         public void PrintContestantInfo(Contestant contestant)
         {
             Console.WriteLine(contestant);
+        }
+
+        public void NotifyAllOfWinner()
+        {
+            Contestant winner = PickWinner();
+            foreach (KeyValuePair<int, Contestant> contestant in contestants)
+            {
+                if (contestant.Value.registrationNumber == winner.registrationNumber)
+                {
+                    UserInterface.CongratulateWinner(this, winner);
+                }
+                else
+                {
+                    UserInterface.NotifyAllOfWinner(this, winner);
+                }
+            }
         }
     }
 }

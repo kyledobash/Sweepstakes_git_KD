@@ -19,5 +19,14 @@ namespace Sweepstakes_actual_KD
             string userInput = Console.ReadLine();
             return userInput;
         }
+        public static void CongratulateWinner(Sweepstakes contest, Contestant winner)
+        {
+            Console.WriteLine("Congratulations " + winner.firstName + " " + winner.lastName + " you've won " + contest.Name + "!");
+        }
+
+        public static void NotifyAllOfWinner(Sweepstakes contest, Contestant winner)
+        {
+            Console.WriteLine(winner.firstName + " " + winner.lastName + " has won " + contest.Name + "!");
+        }
     }
 }
