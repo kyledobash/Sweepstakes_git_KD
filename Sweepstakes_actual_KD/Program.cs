@@ -10,6 +10,7 @@ namespace Sweepstakes_actual_KD
     {
         static void Main(string[] args)
         {
+            Simulation testSim = new Simulation();
         }
     }
 }
